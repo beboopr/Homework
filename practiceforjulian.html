@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Upload an Image</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css" media="(prefers-color-scheme: dark)">
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="image" class="form-label">Select an image to upload:</label>
+        <div class="file-input">
+          <input type="file" name="image" id="image" accept="image/*">
+        </div>
+        <button type="submit" class="submit-button">Upload</button>
+      </form>
+    </div>
+  </body>
+</html>
