@@ -1,19 +1,24 @@
 #building a network coffe shop..
 
-#print("Welcome to the coffee shop. Here's our menu: ")
-#print("1. Coffee")
-#print("2. Tea")
-#print("3. Water")
+print("Welcome to the coffee shop. Here's our menu: ")
+Menu = ("Coffee", "Tea", "Water", "Soda")
 
-#print("What would you like to order? ")
+print("What would you like to order? ")
 
-#order = input()
+order = input(Menu)
 
-#print("You ordered: ", order)
-#print("is that correct?")
-#answer = input()
+print("You ordered: ", order)
+print("is that correct?")
 
-#name = input("What is your name? ")
+answer = input()
 
-#print("Thank you", name , "for your order. Your order will be ready shortly.")
+name = input("What is your name? ")
 
+price = 8.99
+
+quantity = (input("How many would you like? "))
+
+total = price * int(quantity)
+
+print("Thank you", name, "for your", order, "order.")
+print("Your total is: $",total, "and your" ,int(quantity),order, "will be ready shortly.")
