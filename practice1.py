@@ -5,10 +5,12 @@ print("Welcome to the coffee shop.\n")
 
 name = input("What is your name?\n")
 
-if name == "bob":
+if name == "bob" or name == "ed":
     evil_status = input("Are you evil?\n")
-    if evil_status == "yes\n":
-        print("Sorry, your not Welocme here.")
+    good_deeds = int(input("How many good deeds have you done today?\n"))
+    if evil_status == "yes" and good_deeds < 5:
+        
+        print("Sorry, your not Welocme here." , name)
         exit()
     else:
         print("Ohh your one of the good ones.\n")
@@ -47,4 +49,5 @@ else:
 total = price * int(quantity)
 
 print("Thank you", name, "for your", order, "order.")
-print("Your total is: $",total, "and your" ,int(quantity),order,"will be ready shortly.")
+print("Your total is: $",total, "and your" ,int(quantity),order,
+    "will be ready shortly.")
