@@ -5,7 +5,7 @@
 
 supplies = ["tent", "sleeping bag", "water", "water", "rasberry-pi"]
 
-camp_site = ["Lakewaters", 404, 89.2, 10, False]
+camp_site = ["Lakewaters", 404, 89.2, 21, False]
 
 #supplies.append("toilet paper")
 supplies.extend(["rasberry-pi", "bug spray", "dominoes"])
